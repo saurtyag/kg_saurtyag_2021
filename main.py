@@ -2,6 +2,8 @@ import sys
 
 
 def checkstring(a: str, b: str) -> bool:
+    if len(a) == len(b):
+        return False
     len1 = len(set(b))
     len2 = len(set(a))
     len3 = len(set(zip(a, b)))
